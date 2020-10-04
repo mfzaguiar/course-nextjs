@@ -1,6 +1,7 @@
 import { GetServerSideProps } from 'next'
 
 import { Title } from '@/styles/pages/Home'
+import SEO from '@/components/SEO';
 
 interface IProduct {
   id:string;
@@ -22,6 +23,12 @@ async function handleSum() {
 
   return (
     <div>
+        <SEO
+        title="DevCommerce, ecommerce 4U"
+        shoudExcludeTitleSuffix
+        image="boost.png"
+        />
+
       <section>
         <Title>Products</Title>
         <ul>
